@@ -1,0 +1,121 @@
+.contact {
+    background-color: $secondary-background-color;
+    float: left;
+    width: 100%;
+    padding-bottom: 90px;
+    -webkit-box-shadow: 0 0 40px $shadow-color;
+    box-shadow: 0 0 40px $shadow-color;
+    margin: 0 0 280px 0;
+
+    .description {
+        width: 50%;
+        float: left;
+        p {
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+            font-family: "Overpass-Semibold";
+            margin: 80px 0 50px 0;
+        }
+    }
+
+    .form-container {
+        width: 50%;
+        float: left;
+        margin: 80px 0 0 0;
+        form {
+            input {
+                border: none;
+                border-bottom: 1px solid $shadow-color;
+            }
+            input, textarea {
+                box-sizing:border-box;
+                font-family: "Overpass-Regular";
+                font-size: 15px;    
+                width: 100%;
+                padding: 10px 0 10px 15px;
+                resize: none;
+
+                &:focus {
+                    outline: none;
+                    transition: .5s;
+                }          
+                
+                &.invalid {
+                    border: none;
+                }
+            }            
+            .error-message{
+                p {
+                    background-color: $accent-color;
+                    color: white;
+                    margin: 0 0 5px 0;
+                    padding: 1px 15px 1px 15px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    font-size: 14px;
+                    float: left;
+                }
+            }
+            textarea {
+                border: none;
+                margin: 0 0 -5px 0;
+                height: 250px;  
+                font-size: 15px;
+                color: $primary-font-color;
+            }
+            button {
+                font-family: "Overpass-Regular";
+                background-color: #253294;
+                color: white;
+                font-size: 15px;    
+                padding: 15px 0 15px 15px;
+                border: none;
+                resize: none;
+                width: 100%;
+                margin: 0px 0 0 0;
+                transition: .1s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #4257F3;
+                    transition: .1s;
+                }
+
+                &.sent {
+                    background-color: #3CB371;
+                    cursor: inherit;
+                }
+                &.error {
+                    background-color:#DC143C;
+                    cursor: inherit;
+                }
+            }
+            
+        }
+    }
+
+
+    img {
+        width: 40px;
+        margin: 0 0 40px 0;
+    }   
+    .section-group {
+        display: flex;
+        .section {
+            flex: 1;
+
+            .section-header {
+                font-family: "Overpass-Bold";
+            }
+            .section-paragraph {
+                margin-right: 40px;
+            }
+        }
+    }
+
+    .accent-line {
+        @include accent-line(40px, 0px);
+    }
+}

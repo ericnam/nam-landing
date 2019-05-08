@@ -1,0 +1,44 @@
+.intro{
+    float: left;
+    margin: 120px 0 0 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    .header {
+        width: 100%;
+        float: left;        
+        $circle-height: 45px;
+
+        .circle {
+            float: left;
+            @include circle($circle-height);
+        }
+
+        h1 {
+            margin: 10px 0 0 15px;
+            float:left;
+            font-family: "Overpass-Semibold";
+        }
+    }
+
+    p {
+        margin: 0;
+        font-family: "Overpass-Semibold";
+        width: inherit;
+    }
+
+    .blurb {
+        width: 100%;
+        padding: 70px 0;
+        float:left;
+    }
+
+    .social-media {
+        margin: 60px 0 120px 0;
+    }
+    .accent-line {
+        @include accent-line(140px, -2px);
+    }
+}

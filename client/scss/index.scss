@@ -1,0 +1,83 @@
+@import './Fonts/font.scss';
+
+$font-stack: "Overpass-Regular", sans-serif;
+
+$primary-font-color: #262837;
+
+$primary-background-color: white;
+$secondary-background-color: #F0F1F7;
+
+$accent-color: #FF4E4E;
+$shadow-color: #ededed;
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  color: $primary-font-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 100px;
+}
+
+.underline {
+  border-bottom: 2px solid currentColor;
+}
+
+@mixin accent-line($width, $margin-top) {
+  width: $width;
+  border: 1.5px solid $accent-color;
+  background-color: white;
+  margin-top: $margin-top;
+  border-radius: 4px;
+}
+
+@mixin circle($width) {
+  $border-width: $width/10;
+  width: $width;
+  height: $width;
+  background: white;
+  border: $border-width solid $accent-color;
+  -webkit-border-radius: ($width + 2* $border-width)/2;
+     -moz-border-radius: ($width + 2* $border-width)/2;
+          border-radius: ($width + 2* $border-width)/2;
+}
+
+@mixin dribbble($width) {    
+  background-image: url("img/dribbble.svg");
+  background-repeat: no-repeat;
+}
+
+@mixin linkedin($width) {    
+  background-image: url("img/linkedin.svg");
+  background-repeat: no-repeat;
+}
+
+@import './Intro/intro.scss'; 
+@import './SocialMediaIcons/socialmediaicons.scss';
+@import './Offering/offering.scss';
+@import './Display/display.scss';
+@import './Contact/contact.scss';
+@import './Footer/footer.scss';
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color:rgba(255,255,255,0);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $accent-color; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6c4e; 
+}

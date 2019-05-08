@@ -1,0 +1,48 @@
+.display {
+    float: left;
+    width: 100%;
+    padding: 0 0 100px 0;
+    background-color: white;
+    .section {
+        margin-top: 100px;
+        display: flex;
+
+        .img {
+            flex: 0.80;
+            img {
+                width: 100%;
+                -webkit-box-shadow: 0 0 80px $shadow-color;
+                box-shadow: 0 0 80px $shadow-color;
+            }
+            
+            &.cluster {
+                img {
+                    float: left;
+                    width: 49%;
+                    margin: .5%;
+                    -webkit-box-shadow: 0 0 80px $shadow-color;
+                    box-shadow: 0 0 80px $shadow-color;
+                }
+            }
+        }
+        .description {
+            flex: 0.20;
+            margin: 200px 0 0 0;
+            padding: 0 70px 0 80px;
+            .section-header {
+                font-family: "Overpass-Semibold";
+            }
+            .section-paragraph {
+                min-width: 300px;
+                margin: 50px 0;
+            }
+            img {
+                width: 50px;
+                margin: 0 0 15px 0;
+            }
+        }
+    }
+    .accent-line {
+        @include accent-line(25px, -15px);
+    }
+}

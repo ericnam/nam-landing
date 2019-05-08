@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'Overpass-Regular';
+  src: url("fonts/Overpass-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Overpass-Regular.woff") format("woff"), url("fonts/Overpass-Regular.ttf") format("truetype"), url("fonts/Overpass-Regular.svg#Overpass-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Overpass-SemiBold';
+  src: url("fonts/Overpass-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Overpass-SemiBold.woff") format("woff"), url("fonts/Overpass-SemiBold.ttf") format("truetype"), url("fonts/Overpass-SemiBold.svg#Overpass-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Overpass-Bold';
+  src: url("fonts/Overpass-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Overpass-Bold.woff") format("woff"), url("fonts/Overpass-Bold.ttf") format("truetype"), url("fonts/Overpass-Bold.svg#Overpass-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: white;
+  color: #262837; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 100px; }
+
+.underline {
+  border-bottom: 2px solid currentColor; }
+
+.intro {
+  float: left;
+  margin: 120px 0 0 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1; }
+  .intro .header {
+    width: 100%;
+    float: left; }
+    .intro .header .circle {
+      float: left;
+      width: 45px;
+      height: 45px;
+      background: white;
+      border: 4.5px solid #FF4E4E;
+      -webkit-border-radius: 27px;
+      -moz-border-radius: 27px;
+      border-radius: 27px; }
+    .intro .header h1 {
+      margin: 10px 0 0 15px;
+      float: left;
+      font-family: "Overpass-Semibold"; }
+  .intro p {
+    margin: 0;
+    font-family: "Overpass-Semibold";
+    width: inherit; }
+  .intro .blurb {
+    width: 100%;
+    padding: 70px 0;
+    float: left; }
+  .intro .social-media {
+    margin: 60px 0 120px 0; }
+  .intro .accent-line {
+    width: 140px;
+    border: 1.5px solid #FF4E4E;
+    background-color: white;
+    margin-top: -2px;
+    border-radius: 4px; }
+
+.social-media .social-icon {
+  margin: 0 8px 0 0; }
+  .social-media .social-icon img {
+    width: 40px;
+    transition: 0.6s; }
+  .social-media .social-icon img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.6s; }
+
+.offering {
+  background-color: #F0F1F7;
+  float: left;
+  width: 100%;
+  padding-bottom: 90px;
+  -webkit-box-shadow: 0 0 40px #ededed;
+  box-shadow: 0 0 40px #ededed;
+  margin: 600px 0 0 0; }
+  .offering h3 {
+    font-size: 22px;
+    font-family: "Overpass-Semibold";
+    margin: 80px 0 50px 0; }
+  .offering img {
+    width: 40px;
+    margin: 0 0 40px 0; }
+  .offering .section-group {
+    display: flex; }
+    .offering .section-group .section {
+      flex: 1; }
+      .offering .section-group .section .section-header {
+        font-family: "Overpass-Bold"; }
+      .offering .section-group .section .section-paragraph {
+        margin-right: 40px; }
+  .offering .accent-line {
+    width: 25px;
+    border: 1.5px solid #FF4E4E;
+    background-color: white;
+    margin-top: -10px;
+    border-radius: 4px; }
+
+.display {
+  float: left;
+  width: 100%;
+  padding: 0 0 100px 0;
+  background-color: white; }
+  .display .section {
+    margin-top: 100px;
+    display: flex; }
+    .display .section .img {
+      flex: 0.80; }
+      .display .section .img img {
+        width: 100%;
+        -webkit-box-shadow: 0 0 80px #ededed;
+        box-shadow: 0 0 80px #ededed; }
+      .display .section .img.cluster img {
+        float: left;
+        width: 49%;
+        margin: .5%;
+        -webkit-box-shadow: 0 0 80px #ededed;
+        box-shadow: 0 0 80px #ededed; }
+    .display .section .description {
+      flex: 0.20;
+      margin: 200px 0 0 0;
+      padding: 0 70px 0 80px; }
+      .display .section .description .section-header {
+        font-family: "Overpass-Semibold"; }
+      .display .section .description .section-paragraph {
+        min-width: 300px;
+        margin: 50px 0; }
+      .display .section .description img {
+        width: 50px;
+        margin: 0 0 15px 0; }
+  .display .accent-line {
+    width: 25px;
+    border: 1.5px solid #FF4E4E;
+    background-color: white;
+    margin-top: -15px;
+    border-radius: 4px; }
+
+.contact {
+  background-color: #F0F1F7;
+  float: left;
+  width: 100%;
+  padding-bottom: 90px;
+  -webkit-box-shadow: 0 0 40px #ededed;
+  box-shadow: 0 0 40px #ededed;
+  margin: 0 0 280px 0; }
+  .contact .description {
+    width: 50%;
+    float: left; }
+    .contact .description p {
+      max-width: 400px; }
+    .contact .description h1 {
+      font-size: 24px;
+      font-family: "Overpass-Semibold";
+      margin: 80px 0 50px 0; }
+  .contact .form-container {
+    width: 50%;
+    float: left;
+    margin: 80px 0 0 0; }
+    .contact .form-container form input {
+      border: none;
+      border-bottom: 1px solid #ededed; }
+    .contact .form-container form input, .contact .form-container form textarea {
+      box-sizing: border-box;
+      font-family: "Overpass-Regular";
+      font-size: 15px;
+      width: 100%;
+      padding: 10px 0 10px 15px;
+      resize: none; }
+      .contact .form-container form input:focus, .contact .form-container form textarea:focus {
+        outline: none;
+        transition: .5s; }
+      .contact .form-container form input.invalid, .contact .form-container form textarea.invalid {
+        border: none; }
+    .contact .form-container form .error-message p {
+      background-color: #FF4E4E;
+      color: white;
+      margin: 0 0 5px 0;
+      padding: 1px 15px 1px 15px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-size: 14px;
+      float: left; }
+    .contact .form-container form textarea {
+      border: none;
+      margin: 0 0 -5px 0;
+      height: 250px;
+      font-size: 15px;
+      color: #262837; }
+    .contact .form-container form button {
+      font-family: "Overpass-Regular";
+      background-color: #253294;
+      color: white;
+      font-size: 15px;
+      padding: 15px 0 15px 15px;
+      border: none;
+      resize: none;
+      width: 100%;
+      margin: 0px 0 0 0;
+      transition: .1s;
+      cursor: pointer; }
+      .contact .form-container form button:hover {
+        background-color: #4257F3;
+        transition: .1s; }
+      .contact .form-container form button.sent {
+        background-color: #3CB371;
+        cursor: inherit; }
+  .contact img {
+    width: 40px;
+    margin: 0 0 40px 0; }
+  .contact .section-group {
+    display: flex; }
+    .contact .section-group .section {
+      flex: 1; }
+      .contact .section-group .section .section-header {
+        font-family: "Overpass-Bold"; }
+      .contact .section-group .section .section-paragraph {
+        margin-right: 40px; }
+  .contact .accent-line {
+    width: 40px;
+    border: 1.5px solid #FF4E4E;
+    background-color: white;
+    margin-top: 0px;
+    border-radius: 4px; }
+
+.footer {
+  margin: 100px 0 100px 0;
+  width: 100%;
+  float: left;
+  position: fixed;
+  bottom: 0;
+  z-index: -1; }
+  .footer .circle {
+    float: left;
+    width: 55px;
+    height: 55px;
+    background: white;
+    border: 5.5px solid #FF4E4E;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    border-radius: 33px; }
+  .footer .contact-info {
+    width: 300px;
+    float: left;
+    padding: 20px 50px; }
+    .footer .contact-info p {
+      font-family: "Overpass-Regular";
+      margin: -5px 0; }
+  .footer .social-media {
+    float: right;
+    padding: 13px 0px; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF4E4E; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6c4e; }

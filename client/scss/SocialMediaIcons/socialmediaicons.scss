@@ -1,0 +1,15 @@
+.social-media {
+    .social-icon {
+        img {
+            width: 40px;
+        transition: 0.6s;
+        }
+    
+    img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.6s;
+    }
+        margin: 0 8px 0 0;
+    }
+}
