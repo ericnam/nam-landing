@@ -30,14 +30,14 @@ class Section extends Component {
     
     if (this.props.imgleft === "true") {
       return (
-        <div className="section">
+        <div className="a">
             {img}
             {description}
         </div>
       );
     } else {
       return (
-        <div className="section">
+        <div className="a">
             {description}
             {img}
         </div>

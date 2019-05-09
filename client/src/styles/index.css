@@ -23,17 +23,28 @@ body {
   background-color: white;
   color: #262837; }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 100px; }
+@media screen and (min-width: 320px) {
+  .container {
+    margin: auto;
+    padding: 0 50px; } }
+
+@media screen and (min-width: 764px) {
+  .container {
+    margin: auto;
+    padding: 0 75px; } }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 100px; } }
 
 .underline {
   border-bottom: 2px solid currentColor; }
 
 .intro {
   float: left;
-  margin: 120px 0 0 0;
+  margin: 120px 0 120px 0;
   width: 100%;
   position: fixed;
   top: 0;
@@ -63,7 +74,7 @@ body {
     padding: 70px 0;
     float: left; }
   .intro .social-media {
-    margin: 60px 0 120px 0; }
+    margin: 60px 0 0px 0; }
   .intro .accent-line {
     width: 140px;
     border: 1.5px solid #FF4E4E;
@@ -88,22 +99,33 @@ body {
   padding-bottom: 90px;
   -webkit-box-shadow: 0 0 40px #ededed;
   box-shadow: 0 0 40px #ededed;
-  margin: 600px 0 0 0; }
+  margin: 610px 0 0 0; }
   .offering h3 {
     font-size: 22px;
     font-family: "Overpass-Semibold";
     margin: 80px 0 50px 0; }
-  .offering img {
-    width: 40px;
-    margin: 0 0 40px 0; }
-  .offering .section-group {
-    display: flex; }
-    .offering .section-group .section {
-      flex: 1; }
-      .offering .section-group .section .section-header {
-        font-family: "Overpass-Bold"; }
-      .offering .section-group .section .section-paragraph {
-        margin-right: 40px; }
+  @media screen and (min-width: 320px) {
+    .offering img {
+      width: 30px;
+      margin: 0 0 5px 0; } }
+  @media screen and (min-width: 764px) {
+    .offering img {
+      width: 40px;
+      margin: 0 0 40px 0; } }
+  @media screen and (min-width: 320px) {
+    .offering .section-group {
+      display: inherit; }
+      .offering .section-group .section-paragraph {
+        margin: 5px 0 50px 0px; } }
+  @media screen and (min-width: 764px) {
+    .offering .section-group {
+      display: flex; }
+      .offering .section-group .section {
+        flex: 1; }
+      .offering .section-group .section-paragraph {
+        margin: 5px 15px 0 0; } }
+  .offering .section-group .section .section-header {
+    font-family: "Overpass-Bold"; }
   .offering .accent-line {
     width: 25px;
     border: 1.5px solid #FF4E4E;
@@ -159,18 +181,29 @@ body {
   box-shadow: 0 0 40px #ededed;
   margin: 0 0 280px 0; }
   .contact .description {
-    width: 50%;
     float: left; }
+    @media screen and (min-width: 320px) {
+      .contact .description {
+        width: 100%; } }
+    @media screen and (min-width: 764px) {
+      .contact .description {
+        width: 50%; } }
     .contact .description p {
-      max-width: 400px; }
+      max-width: 400px;
+      margin: 10px 8px 0 0; }
     .contact .description h1 {
       font-size: 24px;
       font-family: "Overpass-Semibold";
       margin: 80px 0 50px 0; }
   .contact .form-container {
-    width: 50%;
     float: left;
     margin: 80px 0 0 0; }
+    @media screen and (min-width: 320px) {
+      .contact .form-container {
+        width: 100%; } }
+    @media screen and (min-width: 764px) {
+      .contact .form-container {
+        width: 50%; } }
     .contact .form-container form input {
       border: none;
       border-bottom: 1px solid #ededed; }
@@ -219,6 +252,9 @@ body {
       .contact .form-container form button.sent {
         background-color: #3CB371;
         cursor: inherit; }
+      .contact .form-container form button.error {
+        background-color: #DC143C;
+        cursor: inherit; }
   .contact img {
     width: 40px;
     margin: 0 0 40px 0; }
@@ -245,24 +281,47 @@ body {
   bottom: 0;
   z-index: -1; }
   .footer .circle {
-    float: left;
-    width: 55px;
-    height: 55px;
-    background: white;
-    border: 5.5px solid #FF4E4E;
-    -webkit-border-radius: 33px;
-    -moz-border-radius: 33px;
-    border-radius: 33px; }
+    float: left; }
+    @media screen and (min-width: 320px) {
+      .footer .circle {
+        width: 35px;
+        height: 35px;
+        background: white;
+        border: 3.5px solid #FF4E4E;
+        -webkit-border-radius: 21px;
+        -moz-border-radius: 21px;
+        border-radius: 21px; } }
+    @media screen and (min-width: 764px) {
+      .footer .circle {
+        width: 55px;
+        height: 55px;
+        background: white;
+        border: 5.5px solid #FF4E4E;
+        -webkit-border-radius: 33px;
+        -moz-border-radius: 33px;
+        border-radius: 33px; } }
   .footer .contact-info {
-    width: 300px;
-    float: left;
-    padding: 20px 50px; }
+    float: left; }
+    @media screen and (min-width: 320px) {
+      .footer .contact-info {
+        padding: 10px 0px 10px 15px;
+        font-size: 14px; } }
+    @media screen and (min-width: 764px) {
+      .footer .contact-info {
+        padding: 20px 0px 20px 50px;
+        font-size: inherit; } }
     .footer .contact-info p {
       font-family: "Overpass-Regular";
       margin: -5px 0; }
   .footer .social-media {
-    float: right;
     padding: 13px 0px; }
+    @media screen and (min-width: 320px) {
+      .footer .social-media {
+        display: none; } }
+    @media screen and (min-width: 764px) {
+      .footer .social-media {
+        float: right;
+        display: inherit; } }
 
 /* width */
 ::-webkit-scrollbar {

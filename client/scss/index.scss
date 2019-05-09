@@ -10,6 +10,10 @@ $secondary-background-color: #F0F1F7;
 $accent-color: #FF4E4E;
 $shadow-color: #ededed;
 
+$large-screen: 1200px;
+$medium-screen: 764px;
+$small-screen: 320px;
+
 html{
     scroll-behavior: smooth;
 }
@@ -19,9 +23,19 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 100px;
+  @media screen and (min-width: $small-screen) {
+    margin: auto;
+    padding: 0 50px;
+  }
+  @media screen and (min-width: $medium-screen) {
+    margin: auto;
+    padding: 0 75px;
+  }
+  @media screen and (min-width: $large-screen) {
+    max-width: $large-screen;
+    margin: auto;
+    padding: 0 100px;
+  }  
 }
 
 .underline {
@@ -80,4 +94,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ff6c4e; 
+}
+
+@media (max-width: 764px) {
+
 }

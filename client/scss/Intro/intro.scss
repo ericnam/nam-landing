@@ -1,6 +1,6 @@
 .intro{
     float: left;
-    margin: 120px 0 0 0;
+    margin: 120px 0 120px 0;
     width: 100%;
     position: fixed;
     top: 0;
@@ -36,7 +36,7 @@
     }
 
     .social-media {
-        margin: 60px 0 120px 0;
+        margin: 60px 0 0px 0;
     }
     .accent-line {
         @include accent-line(140px, -2px);

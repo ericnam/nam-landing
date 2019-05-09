@@ -9,19 +9,36 @@
 
     .circle {
         float: left;
-        @include circle(55px);
+        @media screen and (min-width: $small-screen) {
+            @include circle(35px);
+        }
+        @media screen and (min-width: $medium-screen) {
+            @include circle(55px);
+        }
     }
     .contact-info {
-        width: 300px;
         float:left;
-        padding: 20px 50px;
+        @media screen and (min-width: $small-screen) {
+            padding: 10px 0px 10px 15px;
+            font-size: 14px;
+        }
+        @media screen and (min-width: $medium-screen) {
+            padding: 20px 0px 20px 50px;
+            font-size: inherit;
+        }
         p{
             font-family: "Overpass-Regular";
             margin: -5px 0;
         }
     }
     .social-media {
-        float:right;
+        @media screen and (min-width: $small-screen) {
+            display: none;
+        }
+        @media screen and (min-width: $medium-screen) {
+            float:right;
+            display: inherit;
+        }
         padding: 13px 0px;
     }
 }
