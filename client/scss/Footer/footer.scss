@@ -1,12 +1,8 @@
 .footer {
-    margin: 100px 0 100px 0;
+    padding: 100px 0 100px 0;
     width: 100%;
     float: left;
-    
-    position: fixed;
-    bottom: 0;
-    z-index: -1;
-
+    background-color: white;
     .circle {
         float: left;
         @media screen and (min-width: $small-screen) {

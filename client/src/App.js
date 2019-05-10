@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
         <Intro /> 
         <Offering />
-        {/* <Display /> */}
+        <Display />
         <Contact />
         <Footer />
       </div>
